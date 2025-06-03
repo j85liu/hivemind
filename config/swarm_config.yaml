@@ -1,0 +1,16 @@
+# config/swarm_config.yaml
+swarm:
+  size: 10                    # Start small, scale to 100+
+  communication_range: 1000   # meters
+  consensus_threshold: 0.7    # 70% agreement required
+  update_frequency: 10        # Hz
+  
+vision:
+  detection_confidence: 0.5
+  feature_dim: 512           # Deep feature size
+  max_targets_per_drone: 20
+  
+networking:
+  message_timeout: 100       # ms
+  compression_ratio: 0.1     # Feature compression
+  byzantine_tolerance: 0.3   # Handle 30% failures
